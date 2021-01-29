@@ -1,6 +1,7 @@
 package com.example.controller.page;
 
 import com.example.controller.AbstractController;
+import com.example.exception.ApplicationException;
 
 import java.io.IOException;
 
@@ -16,7 +17,7 @@ public class NewsController extends AbstractController {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-          forwardToPage("news.jsp", req, resp);
+        forwardToPage("news.jsp", req, resp);
 
     }
 }
